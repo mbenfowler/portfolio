@@ -3,9 +3,10 @@ nav {
     height: 50px;
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
-.nav {
-    color: inherit;
-    text-decoration: inherit;
+nav h1 {
+    font-family: 'Megrim';
 }

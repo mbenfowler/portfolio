@@ -1,0 +1,12 @@
+.works {
+    height: fit-content;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.works a {
+    display: flex;
+    justify-content: center;
+}

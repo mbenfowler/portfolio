@@ -1,6 +1,12 @@
+import AboutMe from '../AboutMe/AboutMe'
+import Works from '../Works/Works'
+
 const Home = () => {
     return (
-        <main></main>
+        <main>
+            <AboutMe />
+            <Works />
+        </main>
     )
 }
 
