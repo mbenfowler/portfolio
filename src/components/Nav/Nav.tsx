@@ -12,7 +12,6 @@ const Nav = () => {
                 <Link to='https://www.linkedin.com/in/mbenfowler/'>
                     <img src={`${process.env.PUBLIC_URL}/images/linkedin.png`} alt='linkedin'/>
                 </Link>
-                
             </div>
         </nav>
     )
