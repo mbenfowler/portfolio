@@ -2,6 +2,7 @@ nav {
     background-color: gray;
     height: 50px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
@@ -9,4 +10,19 @@ nav {
 
 nav h1 {
     font-family: 'Megrim';
+    margin-left: 10px;
+}
+
+nav div {
+    display: flex;
+}
+
+nav div a {
+    display: flex;
+    justify-content: center;
+}
+
+nav img {
+    height: 25px;
+    margin-right: 10px;
 }
