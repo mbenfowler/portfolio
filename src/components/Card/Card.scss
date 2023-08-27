@@ -8,10 +8,19 @@
     align-items: center;
     margin: 8px;
     padding: 10px;
+    max-width: 312px;
+    text-align: center;
 }
 
 .card img {
     width: 70%;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
 }
 
 .project-buttons {

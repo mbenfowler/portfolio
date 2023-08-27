@@ -1,3 +1,4 @@
+import { nanoid } from 'nanoid'
 import Card from '../Card/Card'
 import './Works.scss'
 import { worksData } from './worksData'
@@ -5,7 +6,7 @@ import { worksData } from './worksData'
 const Works = () => {
     const works = worksData.map(project => {
         return (
-            <Card project={project} key={`${project.id}`}/>
+            <Card project={project} key={nanoid()}/>
         )
     })
     
@@ -13,7 +14,9 @@ const Works = () => {
         <section className='works'>
             <h2>Works</h2>
             <p>lorem ipsum</p>
-            {works}
+            <div className='worksList'>
+                {works}
+            </div>
         </section>
     )
 }
