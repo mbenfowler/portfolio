@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5%;
+    padding: 2%;
     text-align: center;
+    max-height: fit-content;
 }
 
 .about-me > * {
@@ -13,7 +14,7 @@
 .about-me img {
     width: 70%;
     border-radius: 50%;
-    max-width: 500px;
+    max-width: 350px;
 }
 
 .about-me a {

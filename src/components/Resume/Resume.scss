@@ -64,3 +64,17 @@
         font-size: 21px;
     }
 }
+
+@media screen and (max-width: 525px) {
+    #title {
+        font-size: 25px;
+    }
+
+    .header {
+        font-size: 18px;
+    }
+
+    .skill {
+        font-size: 13px;
+    }
+}
