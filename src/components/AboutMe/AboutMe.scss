@@ -5,25 +5,35 @@
     padding: 2%;
     text-align: center;
     max-height: fit-content;
+    background: no-repeat url('./background.gif');
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
 
 .about-me > * {
     padding-bottom: 5px;
 }
 
+.about-me > h2,
+.about-me > p {
+    mix-blend-mode: exclusion;
+}
+
 .about-me img {
     width: 70%;
     border-radius: 50%;
     max-width: 350px;
+    mix-blend-mode: exclusion;
 }
 
 .about-me a {
     text-decoration: none;
+    color: white;
 }
 
 #resumeButton {
     background-color: black;
-    color: white;
     font-size: xx-large;
     padding: 10px;
     border-radius: 10px;
