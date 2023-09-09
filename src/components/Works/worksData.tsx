@@ -1,5 +1,13 @@
 const worksDataWithoutIDs = [
     {
+        name: 'Backyarder',
+        image: `${process.env.PUBLIC_URL}/images/backyarder.png`,
+        description: 'BackYarder enables the user to create and maintain a beautiful garden tailored to their unique vision. Whether you\'re a seasoned gardener or just starting your gardening journey, this app will be the perfect companion for you!',
+        deployLink: 'https://backyarder.vercel.app/',
+        repo: 'https://github.com/Backyarder/backyarder-ui',
+        tags: ['TypeScript', 'React', 'SCSS', 'Cypress']
+    },
+    {
         name: 'Sound Stash',
         image: `${process.env.PUBLIC_URL}/images/soundstash.png`,
         description: 'The must have app for all vinyl collectors! Search for music, save to your personal collection, add journal entries for specific albums, and discover new music aligned with your music preferences!',
