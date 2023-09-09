@@ -14,7 +14,7 @@
     color: white;
     background-color: black;
     margin: 10px;
-    font-size: 3.5vw;
+    font-size: 4.7vw;
 }
 
 #skills {
@@ -29,7 +29,7 @@
 
 #experience {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     text-align: center;
 }
 
@@ -39,9 +39,20 @@
     margin: 5px;
 }
 
+.job > h4,
+.school > h4 {
+    font-weight: lighter;
+}
+
+.job > p,
+.school > p {
+    color: gray;
+}
+
 #education {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
 }
 
@@ -71,7 +82,7 @@
     }
 
     .header {
-        font-size: 18px;
+        font-size: 25px;
     }
 
     .skill {
