@@ -3,7 +3,7 @@ const SKILLS = [
     'TypeScript',
     'JavaScript',
     'HTML',
-    'CSS/SCSS',
+    '(S)CSS',
     'Localization',
     'Software Quality Assurance',
     'Test Automation',

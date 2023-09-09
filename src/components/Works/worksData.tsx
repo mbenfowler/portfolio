@@ -65,4 +65,4 @@ const worksDataWithoutIDs = [
     }
 ]
 
-export const WORKS_DATA = worksDataWithoutIDs.map((project, i) => ({id: i, ...project}))
+export const WORKS_DATA = worksDataWithoutIDs.map((project, i) => ({id: i + 1, ...project}))
