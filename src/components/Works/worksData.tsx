@@ -53,7 +53,7 @@ const worksDataWithoutIDs = [
         description: 'An open source music education/creative tool that will generate and play you a unique melody!',
         deployLink: 'https://zen-cori-c5a337.netlify.app/',
         repo: 'https://github.com/mbenfowler/melody-maker',
-        tags: ['JavaScript', 'React', 'Node/Express', 'Netlify', 'CSS', 'Jest', 'Cypress', 'Slack']
+        tags: ['JavaScript', 'React', 'Node/Express', 'Netlify', 'CSS', 'Jest', 'Cypress', 'SlackBot']
     },
     {
         name: 'CharPrompt',
@@ -61,7 +61,7 @@ const worksDataWithoutIDs = [
         description: 'A character/backstory generator API + slackbot!',
         deployLink: 'https://eloquent-jackson-4036f6.netlify.app/',
         repo: 'https://github.com/mbenfowler/charprompt-slackbot',
-        tags: ['JavaScript', 'Node/Express', 'Netlify', 'Slack']
+        tags: ['JavaScript', 'Node/Express', 'Netlify', 'SlackBot']
     }
 ]
 
