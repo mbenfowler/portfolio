@@ -1,10 +1,10 @@
 import { nanoid } from 'nanoid'
 import Card from '../Card/Card'
 import './Works.scss'
-import { worksData } from './worksData'
+import { WORKS_DATA } from './worksData'
 
 const Works = () => {
-    const works = worksData.map(project => {
+    const works = WORKS_DATA.map(project => {
         return (
             <Card project={project} key={nanoid()}/>
         )
