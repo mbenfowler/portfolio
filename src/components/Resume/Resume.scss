@@ -1,0 +1,66 @@
+#resume {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#title {
+    margin: 10px;
+    font-size: 5vw;
+}
+
+.header {
+    color: white;
+    background-color: black;
+    margin: 10px;
+    font-size: 3.5vw;
+}
+
+#skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.skill {
+    font-size: 2.5vw;
+}
+
+#experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.job {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+#education {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.school {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+@media screen and (min-width: 840px) {
+    #title {
+        font-size: 43px;
+    }
+    
+    .header {
+        font-size: 29px;
+    }
+
+    .skill {
+        font-size: 21px;
+    }
+}
