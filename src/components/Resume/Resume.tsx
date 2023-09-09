@@ -27,7 +27,7 @@ const Resume = () => {
     
     return (
         <article id='resume'>
-            <h1 id='title'>Resume</h1>
+            <h1 id='title'>Résumé</h1>
             <h2 className='header'>Skills and Tools</h2>
             <section id='skills'>{resumeSkills}</section>
             <h2 className='header'>Work experience</h2>

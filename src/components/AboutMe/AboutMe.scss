@@ -25,6 +25,7 @@
     border-radius: 50%;
     max-width: 350px;
     mix-blend-mode: exclusion;
+    z-index: 3;
 }
 
 .about-me a {
@@ -38,4 +39,10 @@
     padding: 10px;
     border-radius: 10px;
     margin-top: 20px;
+}
+
+@media screen and (max-width: 610px) {
+    .about-me {
+        background-size: 200%;
+    }
 }
