@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 import { nanoid } from 'nanoid'
 import Tag from "../Tag/Tag"
 import './Card.scss'
@@ -27,7 +27,7 @@ const Card = ({ project }: {project: ProjectProps} ) => {
     const tags = project.tags.map(tag => <Tag tag={tag} key={nanoid()}/>)
     
     return (
-        <Link to={`/work/${project.id}`} className='nav'>
+        // <Link to={`/work/${project.id}`} className='nav'>
             <div className='card'>
                 <img src={project.image} alt={`demo of ${project.name}`}/>
                 <h3>{project.name}</h3>
@@ -38,7 +38,7 @@ const Card = ({ project }: {project: ProjectProps} ) => {
                     <button id='repo' onClick={handleClick}>Repo</button>
                 </div>
             </div>
-        </Link>
+        // </Link>
     )
 }
 
