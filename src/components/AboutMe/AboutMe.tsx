@@ -4,7 +4,10 @@ import './AboutMe.scss'
 const AboutMe = () => {
     return (
         <section className='about-me'>
-            <img src={process.env.PUBLIC_URL + '/images/explorermben.png'} alt='me'/>
+            <div className='stage'>
+                <img src={process.env.PUBLIC_URL + '/images/explorermben.png'} alt='me'/>
+                <figure className="ball bubble"></figure>
+            </div>
             <h2>Hi I'm Matt and I'm a software engineer.</h2>
             <p>I have a specialty in front end development, quality, and localization.</p>
             <div>
