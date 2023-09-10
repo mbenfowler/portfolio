@@ -13,7 +13,7 @@ const Works = () => {
     return (
         <section className='works'>
             <h2>Works</h2>
-            <div className='worksList'>
+            <div id='worksList'>
                 {works}
             </div>
         </section>

@@ -11,8 +11,14 @@
     justify-content: center;
 }
 
+#worksList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media screen and (min-width: 800px){
-    .worksList {
+    #worksList {
         display: flex;
         justify-content: center;
         flex-direction: row;
