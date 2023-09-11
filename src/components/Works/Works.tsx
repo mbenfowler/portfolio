@@ -24,11 +24,12 @@ const Works = () => {
             <AliceCarousel
                 mouseTracking
                 autoPlay
-                autoPlayStrategy="none"
+                autoPlayStrategy="default"
                 autoPlayInterval={2000}
                 animationDuration={1500}
                 animationType="fadeout"
                 infinite
+                keyboardNavigation
                 disableDotsControls
                 disableButtonsControls
                 items={works}

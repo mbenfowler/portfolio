@@ -34,7 +34,7 @@ const worksDataWithoutIDs = [
     {
         name: 'Colorandom',
         image: `${process.env.PUBLIC_URL}/images/colorandom.png`,
-        description: 'Do you need a custom color palette for your website? How about visualizing how different colors work together for your next digital art project? This application assists designers generate and save custom palettes of 5 colors and their hex-codes.',
+        description: 'Do you need a custom color palette for your website? This application assists designers generate and save your favorite color blends!',
         deployLink: 'https://mbenfowler.github.io/coloRandom/',
         repo: 'https://github.com/mbenfowler/coloRandom',
         tags: ['Javascript', 'CSS', 'HTML', 'Mocha/Chai']
