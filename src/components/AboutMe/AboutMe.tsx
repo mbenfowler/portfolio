@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './AboutMe.scss'
 
 const AboutMe = () => {
-    const FIREFLY_COUNT = 500;
+    const FIREFLY_COUNT = 250;
     let fireflies = [];
     for (let i = 0; i < FIREFLY_COUNT; i++) {
         fireflies.push(<div className='firefly' key={nanoid()}></div>)

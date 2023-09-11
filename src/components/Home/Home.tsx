@@ -1,5 +1,6 @@
 import AboutMe from '../AboutMe/AboutMe'
 import Works from '../Works/Works'
+import './Home.scss'
 
 const Home = () => {
     return (
