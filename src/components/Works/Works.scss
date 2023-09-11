@@ -1,9 +1,16 @@
 .works {
-    height: fit-content;
-    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: no-repeat url('./background2.gif');
+    background-size: cover;
+    background-position: 50% calc(50% - 19px);
+    color: white;
+}
+
+.works h2 {
+    mix-blend-mode: exclusion;
+    margin-top: 10px;
 }
 
 .works a {
@@ -17,11 +24,17 @@
     align-items: center;
 }
 
-@media screen and (min-width: 800px){
-    #worksList {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
+// @media screen and (min-width: 800px){
+//     #worksList {
+//         display: flex;
+//         justify-content: center;
+//         flex-direction: row;
+//         flex-wrap: wrap;
+//     }
+// }
+
+@media screen and (max-width: 610px) {
+    .works {
+        background-size: 200%;
     }
 }
