@@ -10,7 +10,7 @@ const worksDataWithoutIDs = [
     {
         name: 'Sound Stash',
         image: `${process.env.PUBLIC_URL}/images/soundstash.png`,
-        description: 'The must have app for all vinyl collectors! Search for music, save to your personal collection, add journal entries for specific albums, and discover new music aligned with your music preferences!',
+        description: 'The must have app for all vinyl collectors! Search for music, add journal entries for specific albums, and discover new music aligned with your music preferences!',
         deployLink: 'https://sound-stash.vercel.app/',
         repo: 'https://github.com/mbenfowler/sound-stash',
         tags: ['JavaScript', 'React', 'Context API', 'CSS', 'Cypress']
