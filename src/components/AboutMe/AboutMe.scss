@@ -5,7 +5,7 @@
     padding: 20px;
     text-align: center;
     max-height: fit-content;
-    background: no-repeat url('./background.gif');
+    background: black;
     background-size: cover;
     background-position: center;
     color: white;
@@ -24,8 +24,6 @@
     width: 300px;
     height: 300px;
     display: inline-block;
-    perspective: 1200px;
-    perspective-origin: 50% 50%;
 }
 
 .about-me img {
@@ -34,8 +32,9 @@
     max-width: 350px;
     z-index: 3;
     position: relative;
+    mix-blend-mode: exclusion;
     animation: hue 3s infinite ease-in-out;
-    opacity: .3;
+    opacity: .4;
 }
 
 @keyframes hue {
@@ -115,11 +114,11 @@
 
 .about-me a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 #resumeButton {
-    background-color: black;
+    background-color: white;
     font-size: xx-large;
     padding: 10px;
     border-radius: 10px;
