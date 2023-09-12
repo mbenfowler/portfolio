@@ -12,5 +12,8 @@
     "melodymaker_description": "Obrazovni/kreativni alat za glazbeno obrazovanje otvorenog koda koji će vam generirati i odsvirati jedinstvenu melodiju!",
     "charprompt_description": "API za generiranje likova/pozadina + slackbot!",
     "visit": "Posjetiti!",
-    "repo": "Spremište"
+    "repo": "Spremište",
+    "skills_and_tools": "Vještine i alati",
+    "work_experience": "Radno iskustvo",
+    "education": "Obrazovanje"
 }

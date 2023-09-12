@@ -12,5 +12,8 @@
     "melodymaker_description": "An open source music education/creative tool that will generate and play you a unique melody!",
     "charprompt_description": "A character/backstory generator API + slackbot!",
     "visit": "Visit!",
-    "repo": "Repo"
+    "repo": "Repo",
+    "skills_and_tools": "Skills and Tools",
+    "work_experience": "Work experience",
+    "education": "Education"
 }
