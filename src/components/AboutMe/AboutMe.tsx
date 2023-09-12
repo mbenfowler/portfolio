@@ -1,14 +1,14 @@
-import { nanoid } from 'nanoid';
+import { nanoid } from 'nanoid'
 import { Link } from 'react-router-dom'
-import { useLocale } from '../../context/Locale/LocaleProvider';
+import { useLocale } from '../../context/Locale/LocaleProvider'
 import './AboutMe.scss'
 
 const AboutMe = () => {
-    const { state } = useLocale();
-    const { strings } = state;
+    const { state } = useLocale()
+    const { strings } = state
 
-    const FIREFLY_COUNT = 250;
-    let fireflies = [];
+    const FIREFLY_COUNT = 250
+    let fireflies = []
     for (let i = 0; i < FIREFLY_COUNT; i++) {
         fireflies.push(<div className='firefly' key={nanoid()}></div>)
     }
@@ -23,7 +23,7 @@ const AboutMe = () => {
             <h2>{strings.intro}</h2>
             <p>{strings.specialties}</p>
             <div>
-                <Link to='/resume'><p id='resumeButton' className='hover'>Résumé</p></Link>
+                <Link to='/resume'><p id='resumeButton' className='hover'>{strings.resume}</p></Link>
             </div>
         </section>
     )

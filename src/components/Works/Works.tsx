@@ -1,11 +1,15 @@
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
+import AliceCarousel from 'react-alice-carousel'
+import 'react-alice-carousel/lib/alice-carousel.css'
 import { nanoid } from 'nanoid'
+import { useLocale } from '../../context/Locale/LocaleProvider'
 import Card from '../Card/Card'
 import './Works.scss'
 import { WORKS_DATA } from './worksData'
 
 const Works = () => {
+    const { state } = useLocale()
+    const { strings } = state
+
     const responsive = {
         0: { items: 1 },
         568: { items: 2 },
@@ -21,7 +25,7 @@ const Works = () => {
     
     return (
         <section className='works'>
-            <h2>Works</h2>
+            <h2>{strings.works}</h2>
             <AliceCarousel
                 mouseTracking
                 autoPlay
