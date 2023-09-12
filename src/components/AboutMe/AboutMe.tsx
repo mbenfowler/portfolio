@@ -1,8 +1,12 @@
 import { nanoid } from 'nanoid';
 import { Link } from 'react-router-dom'
+import { useLocale } from '../../context/Locale/LocaleProvider';
 import './AboutMe.scss'
 
 const AboutMe = () => {
+    const { state } = useLocale();
+    const { strings } = state;
+
     const FIREFLY_COUNT = 250;
     let fireflies = [];
     for (let i = 0; i < FIREFLY_COUNT; i++) {
@@ -16,8 +20,8 @@ const AboutMe = () => {
                 <img src={process.env.PUBLIC_URL + '/images/explorermben.png'} alt='me'/>
                 <figure className="ball bubble"></figure>
             </div>
-            <h2>Hi I'm Matt and I'm a software engineer.</h2>
-            <p>I have a specialty in front end development, quality, and localization.</p>
+            <h2>{strings.intro}</h2>
+            <p>{strings.specialties}</p>
             <div>
                 <Link to='/resume'><p id='resumeButton' className='hover'>Résumé</p></Link>
             </div>
