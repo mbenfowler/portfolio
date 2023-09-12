@@ -1,11 +1,28 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Nav.scss'
 
-const Nav = () => {
+type NavType = {
+    handleRegionChange: Function
+}
+
+const Nav = ({handleRegionChange}: NavType) => {
+    const [selectValue, setSelectValue] = useState<string>('EN')
+
+    const handleFormChange = (e: React.FormEvent<HTMLSelectElement>) => {
+        const target = e.target as HTMLSelectElement
+        setSelectValue(target.value)
+        handleRegionChange(target.value)
+    }
+
     return (
         <nav>
             <Link to='/' className='nav'><h1>mben</h1></Link>
             <div>
+                <select onChange={handleFormChange} name="language-picker-select" value={selectValue}>
+                    <option lang='en' value='EN'>English</option>
+                    <option lang='fr' value='HR'>Croatian</option>
+                </select>
                 <Link to='https://github.com/mbenfowler'>
                     <img src={`${process.env.PUBLIC_URL}/images/github.png`} alt='github'/>
                 </Link>

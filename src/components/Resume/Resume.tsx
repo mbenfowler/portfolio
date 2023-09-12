@@ -1,8 +1,12 @@
 import { nanoid } from 'nanoid'
+import { useLocale } from '../../context/Locale/LocaleProvider'
 import { SKILLS, EXPERIENCE, EDUCATION } from "./resumeData"
 import './Resume.scss'
 
 const Resume = () => {
+    const { state } = useLocale()
+    const { strings } = state
+
     const resumeSkills = SKILLS.map(skill => <p className='skill' key={nanoid()}>{skill}</p>)
 
     const resumeExperience = EXPERIENCE.map(job => {
@@ -27,12 +31,12 @@ const Resume = () => {
     
     return (
         <article id='resume'>
-            <h1 id='title'>Résumé</h1>
-            <h2 className='header'>Skills and Tools</h2>
+            <h1 id='title'>{strings.resume}</h1>
+            <h2 className='header'>{strings.skills_and_tools}</h2>
             <section id='skills'>{resumeSkills}</section>
-            <h2 className='header'>Work experience</h2>
+            <h2 className='header'>{strings.work_experience}</h2>
             <section id='experience'>{resumeExperience}</section>
-            <h2 className='header'>Education</h2>
+            <h2 className='header'>{strings.education}</h2>
             <section id='education'>{education}</section>
         </article>
     )

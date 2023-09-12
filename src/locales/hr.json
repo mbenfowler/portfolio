@@ -1,0 +1,19 @@
+{
+    "intro": "Bok, ja sam Matt i softverski sam inženjer.",
+    "specialties": "Ja sam specijalnost u front end razvoju, kvaliteti i lokalizaciji.",
+    "resume": "životopis",
+    "works": "Portfelj",
+    "backyarder_description": "BackYarder omogućuje korisniku stvaranje i održavanje prekrasnog vrta po mjeri njegove jedinstvene vizije. Bez obzira jeste li iskusni vrtlar ili tek započinjete svoje vrtlarsko putovanje, ova će aplikacija biti savršen suputnik za vas!",
+    "soundstash_description": "Aplikacija koju moraju imati svi kolekcionari vinila! Pretražujte glazbu, dodajte unose u dnevnik za određene albume i otkrijte novu glazbu usklađenu s vašim glazbenim preferencijama!",
+    "birdalert_description": "Bird Alert! je alat koji treba svakom ljubitelju ptica, od običnog ptičara u dvorištu do okorjelog stručnjaka koji želi završiti snažnu veliku godinu!",
+    "whatscookin_description": "Potražite i spremite svoje omiljene recepte!",
+    "colorandom_description": "Trebate li prilagođenu paletu boja za svoju web stranicu? Ova aplikacija pomaže dizajnerima da generiraju i spreme vaše omiljene mješavine boja!",
+    "overlook_description": "Pojednostavljena, jednostavna aplikacija za rezerviranje soba za profesionalce u pokretu!",
+    "melodymaker_description": "Obrazovni/kreativni alat za glazbeno obrazovanje otvorenog koda koji će vam generirati i odsvirati jedinstvenu melodiju!",
+    "charprompt_description": "API za generiranje likova/pozadina + slackbot!",
+    "visit": "Posjetiti!",
+    "repo": "Spremište",
+    "skills_and_tools": "Vještine i alati",
+    "work_experience": "Radno iskustvo",
+    "education": "Obrazovanje"
+}
