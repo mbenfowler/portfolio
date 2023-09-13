@@ -175,15 +175,15 @@ $quantity: 100;
     z-index: 1;
 }
 
-// .ball.plain {
-//     background: black;
-//     &:before {
-//         display: none;
-//     }
-//     &:after {
-//         display: none;
-//     }
-// }
+.ball.plain {
+    background: black;
+    &:before {
+        display: none;
+    }
+    &:after {
+        display: none;
+    }
+}
 
 // .ball.bubble {
 //     background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.2), rgba(240, 245, 255, 0.2) 40%, rgba(225, 238, 255, 0.2) 60%, rgba(43, 130, 255, 0.2));
