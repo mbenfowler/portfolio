@@ -11,7 +11,7 @@
     color: white;
 }
 
-$quantity: 1;
+$quantity: 100;
 
 .firefly {
   position: fixed;
@@ -22,28 +22,28 @@ $quantity: 1;
   margin: -0.2vw 0 0 9.8vw;
   animation: ease 200s alternate infinite;
   pointer-events: none;
-  &:before,
-  &:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    transform-origin: -10vw;
-  }
+//   &:before,
+//   &:after {
+//     content: '';
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     border-radius: 50%;
+//     transform-origin: -10vw;
+//   }
 
-  &:before {
-    background: black;
-    opacity: 0.4;
-    animation: drift ease alternate infinite;
-  }
+//   &:before {
+//     background: black;
+//     opacity: 0.4;
+//     animation: drift ease alternate infinite;
+//   }
 
-  &:after {
-    background: white;
-    opacity: 0;
-    box-shadow: 0 0 0vw 0vw yellow;
-    animation: drift ease alternate infinite, flash ease infinite;
-  }
+//   &:after {
+//     background: white;
+//     opacity: 0;
+//     box-shadow: 0 0 0vw 0vw yellow;
+//     animation: drift ease alternate infinite, flash ease infinite;
+//   }
 }
 
 // Randomize Fireflies Motion
