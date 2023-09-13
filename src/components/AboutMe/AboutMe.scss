@@ -166,14 +166,14 @@ $quantity: 100;
     }
 }
 
-// .ball.shadow {
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-//     background: radial-gradient(circle, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
-//     transform: rotateX(90deg) translateZ(-160px);
-//     z-index: 1;
-// }
+.ball.shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+    transform: rotateX(90deg) translateZ(-160px);
+    z-index: 1;
+}
 
 // .ball.plain {
 //     background: black;
