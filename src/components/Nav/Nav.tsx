@@ -18,11 +18,17 @@ const Nav = ({handleRegionChange}: NavType) => {
     return (
         <nav>
             <Link to='/' className='nav'><h1>mben</h1></Link>
-            <div>
-                <select onChange={handleFormChange} name="language-picker-select" value={selectValue}>
-                    <option lang='en' value='EN'>English</option>
-                    <option lang='fr' value='HR'>Croatian</option>
-                </select>
+            <div id='rightSideNav'>
+                <div className='custom-select'>
+                    <select onChange={handleFormChange} name="language-picker-select" defaultValue={selectValue}>
+                        <option lang='en' value='EN'>English</option>
+                        <option lang='fr' value='HR'>Hrvatski</option>
+                    </select>
+                    <div className="custom-select-value">
+                        <span className="material-symbols-outlined">language</span>
+                        <span id='selectedLocale'>{selectValue}</span>
+                    </div>
+                </div>
                 <Link to='https://github.com/mbenfowler'>
                     <img src={`${process.env.PUBLIC_URL}/images/github.png`} alt='github'/>
                 </Link>

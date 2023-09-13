@@ -27,3 +27,41 @@ nav img {
     height: 25px;
     margin-right: 10px;
 }
+
+#rightSideNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    margin-right: 10px;
+}
+
+.custom-select select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-select-value {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#selectedLocale {
+    margin-left: 3px;
+}
