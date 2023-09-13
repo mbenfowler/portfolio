@@ -186,17 +186,17 @@ $quantity: 100;
 }
 
 .ball.bubble {
-    background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.2), rgba(240, 245, 255, 0.2) 40%, rgba(225, 238, 255, 0.2) 60%, rgba(43, 130, 255, 0.2));
+    // background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.2), rgba(240, 245, 255, 0.2) 40%, rgba(225, 238, 255, 0.2) 60%, rgba(43, 130, 255, 0.2));
     &:before {
         filter: blur(0);
         height: 80%;
         width: 40%;
-        background: radial-gradient(circle at 130% 130%, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 46%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 58%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 100%);
+        // background: radial-gradient(circle at 130% 130%, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 46%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 58%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 100%);
         transform: translateX(131%) translateY(58%) rotateZ(168deg) rotateX(10deg);
     }
     &:after {
         display: block;
-        background: radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 74%, white 80%, white 84%, rgba(255, 255, 255, 0) 100%);
+        // background: radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 74%, white 80%, white 84%, rgba(255, 255, 255, 0) 100%);
     }
 }
 
@@ -211,11 +211,11 @@ $quantity: 100;
     padding: 10px;
     border-radius: 10px;
     margin-top: 20px;
-    // &:hover {
-    //     cursor: pointer;
-    //     transform: scale(1.1);
-    //     transition: all .2s ease-in-out;
-    // }
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: all .2s ease-in-out;
+    }
 }
 
 @media screen and (max-width: 610px) {
