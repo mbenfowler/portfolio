@@ -14,7 +14,8 @@ const Works = () => {
         0: { items: 1 },
         568: { items: 2 },
         1024: { items: 3 },
-        2000: { items: 4 }
+        2000: { items: 4 },
+        2500: { items: 5 }
     };
 
     const works = WORKS_DATA.map(project => {

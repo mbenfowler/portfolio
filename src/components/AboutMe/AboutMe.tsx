@@ -7,7 +7,7 @@ const AboutMe = () => {
     const { state } = useLocale()
     const { strings } = state
 
-    const FIREFLY_COUNT = 250
+    const FIREFLY_COUNT = 100
     let fireflies = []
     for (let i = 0; i < FIREFLY_COUNT; i++) {
         fireflies.push(<div className='firefly' key={nanoid()}></div>)

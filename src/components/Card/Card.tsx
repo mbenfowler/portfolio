@@ -39,8 +39,8 @@ const Card = ({ project }: {project: ProjectProps} ) => {
                 <div className='tags'>{tags}</div>
                 <p>{description}</p>
                 <div className='project-buttons'>
-                    <button id='visit' onClick={handleClick}>{strings.visit}</button>
-                    <button id='repo' onClick={handleClick}>{strings.repo}</button>
+                    <div id='visit' onClick={handleClick}>{strings.visit}</div>
+                    <div id='repo' onClick={handleClick}>{strings.repo}</div>
                 </div>
             </div>
         // </Link>
