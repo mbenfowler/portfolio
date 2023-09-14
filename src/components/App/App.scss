@@ -1,3 +1,19 @@
 body {
     height: fit-content;
 }
+
+[data-theme='dark'] {
+    --background: black;
+    --text: white;
+    --exclusion: 'exclusion';
+    --card-shadow: #CDDC39;
+    --firefly-flash: yellow;
+}
+  
+[data-theme='light'] {
+    --background: white;
+    --text: black;
+    --exclusion: 'revert';
+    --card-shadow: purple;
+    --firefly-flash: purple;
+}

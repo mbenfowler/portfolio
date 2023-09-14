@@ -2,14 +2,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: black;
-    color: white;
+    background: var(--background);
+    color: var(--text);
     flex-grow: 1;
 }
 
 .works h2 {
-    mix-blend-mode: exclusion;
+    color: var(--text);
+    mix-blend-mode: var(--exclusion);
     margin-top: 10px;
+    z-index: 3;
 }
 
 .works a {
