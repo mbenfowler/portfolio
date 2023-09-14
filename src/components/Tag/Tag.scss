@@ -1,5 +1,5 @@
 .tag {
-    background-color: white;
+    background-color: var(--text);
     border-radius: 10px;
     padding: 5px;
     margin: 0 2px 2px;
@@ -7,6 +7,6 @@
 }
 
 .tag p {
-    color: black;
+    color: var(--background);
     font-size: x-small;
 }

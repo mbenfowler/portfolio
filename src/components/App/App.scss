@@ -1,3 +1,13 @@
 body {
     height: fit-content;
 }
+
+[data-theme='dark'] {
+    --background: black;
+    --text: white;
+}
+  
+[data-theme='light'] {
+    --background: white;
+    --text: black;
+}

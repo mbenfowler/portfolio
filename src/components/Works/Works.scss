@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: black;
-    color: white;
+    background: var(--background);
+    color: var(--text);
     flex-grow: 1;
 }
 

@@ -1,4 +1,6 @@
 #resume {
+    background-color: var(--background);
+    color: var(--text);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -11,10 +13,17 @@
 }
 
 .header {
-    color: white;
-    background-color: black;
+    color: var(--background);
+    background-color: var(--text);
     margin: 10px;
     font-size: 4.7vw;
+    padding: 0 5px 0 5px;
+}
+
+
+.header:nth-child(4),
+.header:nth-child(6) {
+    margin-top: 30px;
 }
 
 #skills {

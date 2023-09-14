@@ -4,9 +4,11 @@ import './Nav.scss'
 
 type NavType = {
     handleRegionChange: Function
+    isDark: boolean
+    setIsDark: Function
 }
 
-const Nav = ({handleRegionChange}: NavType) => {
+const Nav = ({ handleRegionChange, isDark, setIsDark }: NavType) => {
     const [selectValue, setSelectValue] = useState<string>('EN')
 
     const handleFormChange = (e: React.FormEvent<HTMLSelectElement>) => {

@@ -5,10 +5,10 @@
     padding: 20px;
     text-align: center;
     max-height: fit-content;
-    background: black;
+    background: var(--background);
     background-size: cover;
     background-position: center;
-    color: white;
+    color: var(--text);
 }
 
 $quantity: 100;
@@ -207,7 +207,7 @@ $quantity: 100;
 }
 
 #resumeButton {
-    background-color: white;
+    background-color: var(--text);
     font-size: xx-large;
     padding: 10px;
     border-radius: 10px;
