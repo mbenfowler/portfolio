@@ -7,6 +7,7 @@ body {
     --text: white;
     --exclusion: 'exclusion';
     --card-shadow: #CDDC39;
+    --firefly-flash: yellow;
 }
   
 [data-theme='light'] {
@@ -14,4 +15,5 @@ body {
     --text: black;
     --exclusion: 'revert';
     --card-shadow: purple;
+    --firefly-flash: purple;
 }
