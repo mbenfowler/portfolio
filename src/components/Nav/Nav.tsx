@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import './Nav.scss'
 
 type NavType = {
@@ -11,6 +12,10 @@ type NavType = {
 const Nav = ({ handleRegionChange, isDark, setIsDark }: NavType) => {
     const [selectValue, setSelectValue] = useState<string>('EN')
 
+    const toggleDarkMode = (checked: boolean) => {
+        setIsDark(checked)
+    };
+
     const handleFormChange = (e: React.FormEvent<HTMLSelectElement>) => {
         const target = e.target as HTMLSelectElement
         setSelectValue(target.value)
@@ -19,7 +24,17 @@ const Nav = ({ handleRegionChange, isDark, setIsDark }: NavType) => {
 
     return (
         <nav>
-            <Link to='/' className='nav'><h1>mben</h1></Link>
+            <div id='leftSideNav'>
+                <Link to='/' className='nav'><h1>mben</h1></Link>
+                <DarkModeSwitch
+                    style={{ marginLeft: '.5rem', marginRight: '1rem' }}
+                    checked={isDark}
+                    onChange={toggleDarkMode}
+                    size={30}
+                    moonColor={'black'}
+                    sunColor={'white'}
+                />
+            </div>
             <div id='rightSideNav'>
                 <div className='custom-select'>
                     <select onChange={handleFormChange} name="language-picker-select" defaultValue={selectValue}>

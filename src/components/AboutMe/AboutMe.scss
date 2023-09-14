@@ -11,6 +11,16 @@
     color: var(--text);
 }
 
+.about-me > * {
+    padding-bottom: 5px;
+}
+
+.about-me > h2,
+.about-me > p {
+    color: var(--text);
+    mix-blend-mode: var(--exclusion);
+}
+
 $quantity: 100;
 
 .firefly {
@@ -95,15 +105,6 @@ $quantity: 100;
         opacity: 0;
         box-shadow: 0 0 0vw 0vw yellow;
     }
-}
-
-.about-me > * {
-    padding-bottom: 5px;
-}
-
-.about-me > h2,
-.about-me > p {
-    mix-blend-mode: exclusion;
 }
 
 .stage {
@@ -203,7 +204,7 @@ $quantity: 100;
 
 .about-me a {
     text-decoration: none;
-    color: black;
+    color: var(--background);
 }
 
 #resumeButton {

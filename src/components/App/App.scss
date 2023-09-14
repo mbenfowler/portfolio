@@ -5,9 +5,13 @@ body {
 [data-theme='dark'] {
     --background: black;
     --text: white;
+    --exclusion: 'exclusion';
+    --card-shadow: #CDDC39;
 }
   
 [data-theme='light'] {
     --background: white;
     --text: black;
+    --exclusion: 'revert';
+    --card-shadow: purple;
 }
