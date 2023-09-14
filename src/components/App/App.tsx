@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Nav from '../Nav/Nav'
 import Home from '../Home/Home'
@@ -23,6 +23,11 @@ function App() {
   };
 
   const [isDark, setIsDark] = useState(true)
+
+  useEffect(() => {
+    const root = document.documentElement;
+    root.style.setProperty('--background', isDark ? 'var(--background-dark)' : 'var(--background-light)');
+  }, [isDark]);
 
   return (
     <div data-theme={isDark ? 'dark' : 'light'}>

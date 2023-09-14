@@ -2,6 +2,11 @@ body {
     height: fit-content;
 }
 
+:root {
+    --background-dark: black;
+    --background-light: white;
+}
+
 [data-theme='dark'] {
     --background: black;
     --text: white;
