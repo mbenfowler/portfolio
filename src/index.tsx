@@ -5,6 +5,9 @@ import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { LocaleProvider } from './context/Locale/LocaleProvider';
+import { inject } from '@vercel/analytics';
+ 
+inject();
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
