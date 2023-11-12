@@ -21,7 +21,7 @@ const worksDataWithoutIDs = [
         i18nDescriptionKey: 'birdalert_description',
         deployLink: 'https://bird-alert.vercel.app/',
         repo: 'https://github.com/mbenfowler/bird-alert',
-        tags: ['JavaScript', 'React', 'Context API', 'CSS', 'Cypress']
+        tags: ['JavaScript', 'React', 'Context API', 'CSS', 'Cypress', 'Vercel Serverless Functions', 'Knex.js', 'PostgreSQL']
     },
     {
         name: "What's Cookin'",
