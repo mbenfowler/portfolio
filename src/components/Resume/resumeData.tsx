@@ -4,6 +4,7 @@ const SKILLS = [
     'JavaScript',
     'HTML',
     '(S)CSS',
+    'Node.js',
     'Localization',
     'Software Quality Assurance',
     'Test Automation',
