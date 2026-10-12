@@ -31,7 +31,7 @@ const Works = () => {
                 mouseTracking
                 autoPlay
                 autoPlayStrategy="default"
-                autoPlayInterval={2000}
+                autoPlayInterval={6000}
                 animationDuration={1500}
                 animationType="fadeout"
                 infinite

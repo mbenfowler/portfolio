@@ -30,11 +30,12 @@
     display: flex;
 }
 
-.project-buttons div {
+.project-buttons a {
     margin: 10px;
-    padding: 5px;
+    padding: 5px 10px;
     background-color: var(--text);
     color: var(--background);
+    text-decoration: none;
     border-radius: 15px;
     height: 30px;
     display: flex;
