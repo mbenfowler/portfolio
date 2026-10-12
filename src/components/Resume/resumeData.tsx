@@ -1,35 +1,47 @@
 const SKILLS = [
-    'React',
-    'TypeScript',
-    'JavaScript',
-    'HTML',
-    '(S)CSS',
-    'Node.js',
-    'Localization',
-    'Software Quality Assurance',
-    'Test Automation',
-    'Agile Methodologies',
-    'Project Management'
+    {
+        group: 'Leadership',
+        items: ['Test Strategy', 'Governance & Standards', 'Release Readiness', 'Vendor & ROI Management', 'Cross-Team Coordination']
+    },
+    {
+        group: 'Quality Practice',
+        items: ['E2E & Integration Testing', 'Regression Automation', 'Defect Management', 'Localization QA']
+    },
+    {
+        group: 'Automation',
+        items: ['Cypress', 'Selenium', 'RSpec/Capybara', 'Jest', 'CI/CD']
+    },
+    {
+        group: 'Engineering & AI',
+        items: ['React', 'TypeScript', 'Node.js', 'Claude Code', 'GitHub Copilot']
+    }
 ]
 
 const EXPERIENCE = [
+    {
+        title: 'Enterprise Testing Coordinator',
+        company: 'Northeast Georgia Health System',
+        tenure: 'Mar 2024',
+        current: true
+    },
+    {
+        title: 'Lead Front End Developer, Founding Member',
+        company: 'Nodding Birds',
+        tenure: 'Jan 2024',
+        current: true
+    },
     {
         title: 'Senior Software Engineer in Test',
         company: 'Handshake',
         tenure: 'Nov 2020 - Nov 2022'
     },
     {
-        title: 'QA Engineer',
-        company: 'Procore',
+        title: 'QA Engineer, Localization',
+        company: 'Procore Technologies',
         tenure: 'May 2017 - Sep 2020'
     },
     {
-        title: 'Business Development Consultant',
-        company: 'Method3',
-        tenure: 'Dec 2013 - Sep 2014'
-    },
-    {
-        title: 'Airborne Cryptologic Language Analyst',
+        title: 'Airborne Linguist, Staff Sergeant',
         company: 'United States Air Force',
         tenure: 'Jul 2006 - Jul 2012'
     }
@@ -39,7 +51,7 @@ const EDUCATION = [
     {
         name: 'Turing School of Software and Design',
         program: 'Front End Engineering',
-        datesAttended: 'Mar 2023 - Sep 2023',
+        datesAttended: 'Mar 2023 - Oct 2023',
     },
     {
         name: 'State University of New York at Plattsburgh',
@@ -47,8 +59,8 @@ const EDUCATION = [
         datesAttended: 'Aug 2013 - May 2015'
     },
     {
-        name: 'Defence Language Institute Foreign Language Center',
-        program: 'Associates of Arts, Persian Afghan',
+        name: 'Community College of the Air Force',
+        program: 'Associate of Arts, Persian-Afghan/Dari',
         datesAttended: 'Nov 2006 - Nov 2007'
     }
 ]

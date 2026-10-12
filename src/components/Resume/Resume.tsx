@@ -7,14 +7,24 @@ const Resume = () => {
     const { state } = useLocale()
     const { strings } = state
 
-    const resumeSkills = SKILLS.map(skill => <p className='skill' key={nanoid()}>{skill}</p>)
+    const resumeSkills = SKILLS.map(group => {
+        return (
+            <div className='skill-group' key={nanoid()}>
+                <p className='skill-label'>{group.group}</p>
+                <div className='skill-list'>
+                    {group.items.map(skill => <span className='skill' key={nanoid()}>{skill}</span>)}
+                </div>
+            </div>
+        )
+    })
 
     const resumeExperience = EXPERIENCE.map(job => {
+        const tenure = job.current ? `${job.tenure} - ${strings.present}` : job.tenure
         return (
             <div className='job' key={nanoid()}>
                 <h3>{job.title}</h3>
                 <h4>{job.company}</h4>
-                <p>{job.tenure}</p>
+                <p>{tenure}</p>
             </div>
         )
     })
@@ -32,6 +42,7 @@ const Resume = () => {
     return (
         <article id='resume'>
             <h1 id='title'>{strings.resume}</h1>
+            <p id='headline'>{strings.headline}</p>
             <h2 className='header'>{strings.skills_and_tools}</h2>
             <section id='skills'>{resumeSkills}</section>
             <h2 className='header'>{strings.work_experience}</h2>
