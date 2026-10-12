@@ -1,46 +1,79 @@
-# Getting Started with Create React App
+# mben portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio for Matt Fowler, live at [mben.vercel.app](https://mben.vercel.app).
 
-## Available Scripts
+A single-page React app with a splash page (intro, resume link, project carousel) and a resume page. Hand-built, dark by default, with a light mode toggle and an English/Croatian language switch.
 
-In the project directory, you can run:
+## Stack
 
-### `npm start`
+- React 18 + TypeScript, bootstrapped with Create React App (`react-scripts` 5)
+- React Router 6 for the two routes
+- SCSS per component
+- `react-alice-carousel` for the Works carousel
+- Deployed on Vercel with Vercel Analytics
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Node 24 is pinned in `package.json` (`engines`) because Vercel builds on it.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Running locally
 
-### `npm test`
+```powershell
+npm install
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Opens at `http://localhost:3000`. Hot reload is on.
 
-### `npm run build`
+```powershell
+npm run build   # production build to ./build
+npx tsc --noEmit -p .   # type check only
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Layout
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+public/
+  images/            project screenshots, avatar, nav icons
+  index.html         loads Megrim (logo) and JetBrains Mono (body) from Google Fonts
+src/
+  index.tsx          mounts the app, wraps it in LocaleProvider + BrowserRouter
+  index.css          global reset and body font stack
+  components/
+    App/             routes, dark mode state, theme CSS variables (App.scss)
+    Nav/             logo, dark mode toggle, language picker, GitHub/LinkedIn links
+    Home/            splash page: AboutMe + Works
+    AboutMe/         avatar, intro copy, Resume button, firefly animation
+    Works/           carousel of project cards; worksData.tsx holds the projects
+    Card/            one project card (image, tags, description, Visit/Repo links)
+    Tag/             small tech pill used on cards
+    Resume/          resume page; resumeData.tsx holds skills, experience, education
+    Project/         placeholder route (/work/:id), not wired up
+    EmptyState/      404 fallback
+  context/Locale/    reducer-based locale context, loads strings from src/locales
+  locales/
+    en.json, hr.json user-facing strings, keyed identically
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Routes
 
-### `npm run eject`
+| Path | Component |
+|---|---|
+| `/` | Home (AboutMe + Works) |
+| `/resume` | Resume |
+| `/work/:id` | Project (empty placeholder) |
+| `*` | EmptyState |
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Editing content
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Projects.** Add or remove entries in `src/components/Works/worksData.tsx`. Each project needs a screenshot in `public/images/`, a description key present in both locale files, and a `repo` link. `deployLink` is optional; leave it out and the card shows only a Repo button.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Resume.** Edit `src/components/Resume/resumeData.tsx`. Skills are four labeled groups rendered as pill tags, with the first group filled to draw the eye. Jobs with `current: true` get a localized "Present" appended to their start date. The canonical resume lives in the sibling `Resumes` repo; this page is a lighter mirror of it, so keep it to titles, companies, and dates.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**Strings.** Every user-facing string lives in `src/locales/en.json` and `src/locales/hr.json`. Add keys to both files or the Croatian view will render `undefined`.
 
-## Learn More
+**Theme.** Colors are CSS variables set in `src/components/App/App.scss` under `[data-theme='dark']` and `[data-theme='light']`. The accent (`--card-shadow`, `--firefly-flash`) is lime in dark mode and purple in light mode.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Fonts.** The body stack is `Monaco, 'JetBrains Mono', Menlo, Consolas, monospace`. Monaco is macOS only; JetBrains Mono is loaded from Google Fonts so other platforms match.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Deploying
+
+Every push to `main` deploys to Vercel. There is no CI step; run the type check and build locally before pushing.
