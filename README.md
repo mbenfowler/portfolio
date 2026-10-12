@@ -1,8 +1,8 @@
 # mben portfolio
 
-Personal portfolio for Matt Fowler, live at [mben.vercel.app](https://mben.vercel.app).
+**Live site: [https://mben.vercel.app](https://mben.vercel.app)**
 
-A single-page React app with a splash page (intro, resume link, project carousel) and a resume page. Hand-built, dark by default, with a light mode toggle and an English/Croatian language switch.
+Personal portfolio for Matt Fowler. A single-page React app with a splash page (intro, resume link, project carousel) and a resume page. Hand-built, dark by default, with a light mode toggle and an English/Croatian language switch.
 
 ## Stack
 
